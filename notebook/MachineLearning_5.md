@@ -29,7 +29,8 @@ $$\frac{\partial J(w)}{w}=s_bw(w^Ts_ww)^{-1}+w^Ts_bw(-1)(w^Ts_ww)^{-2}s_ww=0$$
 
 $$s_bw(w^Ts_ww) = w^Ts_bws_ww $$
 其中$w^Ts_bw, w^Ts_ww$均为$1\times 1$的标量
-$$s_ww = \frac{w^Ts_ww}{w^Ts_bw}s_bw \\ w = \frac{w^Ts_ww}{w^Ts_bw}s_w^{-1}s_bw$$
+$$s_ww = \frac{w^Ts_ww}{w^Ts_bw}s_bw $$
+$$ w = \frac{w^Ts_ww}{w^Ts_bw}s_w^{-1}s_bw$$
 
 $\therefore w \propto s_w^{-1}s_bw=s_w^{-1}(\bar{x_{c_1}} - \bar{x_{c_2}})(\bar{x_{c_1}} - \bar{x_{c_2}})^Tw$
 其中$(\bar{x_{c_1}} - \bar{x_{c_2}})^Tw$为标量
