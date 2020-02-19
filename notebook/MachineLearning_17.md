@@ -8,7 +8,6 @@ $$\theta_{MLE} = \mathop{\arg\max}\limits_{\theta}\log P(x|\theta)$$
 EM算法：
 $$\theta^{(i+1)} =  \mathop{\arg\max}\limits_{\theta}\int_z \underbrace{\log P(x,z|\theta)}_{E_{z|x,\theta^{(t)}}[\log P(x,z|\theta)]} \cdot P(z|x,\theta^{(i)})$$
 
-
 EM为迭代算法，下证明迭代收敛性。
 $$\begin{aligned} 
 \log P(x|\theta) & = \log \frac{P(x,z|\theta)}{P(z|x,\theta)} = \log P(x,z|\theta) - \log P(z|x,\theta) \\
@@ -18,5 +17,5 @@ $$\begin{aligned}
 
 其中，$H(\theta,\theta^{(t)})$为KL散度，恒非负。
 
-
+先求期望，再求最大。
 
